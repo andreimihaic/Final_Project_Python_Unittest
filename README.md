@@ -13,3 +13,9 @@ The structure of the project implemented in Python using unittest is as follows:
 * Module 8: test_return_to_homepage.py - verifies the operation of the return to homepage button by accessing the logo. 
 * Module 9: test_add_to_cart.py - checks the correctness of the "Add to Cart" button functionality.
 * Module 10: test_social_media_buttons.py - verifies the functionality of the social media buttons and redirects to the corresponding sites.
+  
+The framework used for automated testing is unittest. By running the automated tests in the unittest framework, we obtained results regarding the correctness of the functioning of various components of the website in different situations and interactions.
+--------------------------------
+
+The results obtained validated the proper functioning of the site in different tested scenarios, and unittest provided us with the opportunity to automate this process, thereby reducing errors and the time required for manual verification of each aspect.
+--------------------------------
