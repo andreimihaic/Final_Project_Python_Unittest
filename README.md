@@ -18,6 +18,8 @@ The framework used for automated testing is unittest. By running the automated t
 
 
 The results obtained validated the proper functioning of the site in different tested scenarios, and unittest provided us with the opportunity to automate this process, thereby reducing errors and the time required for manual verification of each aspect.
+--------------------------------
+
 Test report:
 --------------------------------
 
