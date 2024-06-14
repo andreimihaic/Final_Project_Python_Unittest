@@ -26,4 +26,6 @@ Test report:
 ![Test1](https://github.com/AndreiMihaiC/Unittest/assets/120325527/fda7aabc-3830-4705-a001-773a65c029d6)
 ![Test12](https://github.com/AndreiMihaiC/Unittest/assets/120325527/2783bcac-dab5-4f0e-98c1-d4e7f7288d0c)
 
+The tests passed successfully, instead the test_add_product_cart test failed with the error message "ElementClickInterceptedExceptionoccurred". This exception occurs when we cannot click on an element due to the existence of another element that blocks access to it.
+
 
