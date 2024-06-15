@@ -26,7 +26,7 @@ Project description: The main purpose of this site's automated testing is to che
 </ul><br>
 
 <ol>
-<li> Test report </li>
+<h2> Test report </h2>
 <br>  
   
 The framework used for automated testing is unittest. By running the automated tests in the unittest framework, we obtained results regarding the correctness of the functioning of various components of the website in different situations and interactions.
