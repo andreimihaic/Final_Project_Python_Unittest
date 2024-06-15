@@ -1,18 +1,33 @@
-Automatic testing of a "Sinsay" fashion site.
+Automatic testing.
 ==============================================================================================================================
 
-The structure of the project implemented in Python using unittest is as follows:
---------------------------------
-* Module 1: test_open_site.py - verifies the correctness of opening the site. 
-* Module 2: test_accept_cookies.py - checks the functionality of the site on different browsers after accepting cookies. 
-* Module 3: test_redirect_to_shopping_page.py - verifies the functioning of the site after redirecting to the shopping page in Romania. 
-* Module 4: test_search_functionality.py - verifies the correctness of the product search system. 
-* Module 5: test_invalid_search.py - checks the behavior of the search system in case of entering an invalid value. 
-* Module 6: test_filter_buttons.py - verifies the correct functioning of the filtering buttons. 
-* Module 7: test_interactions.py - checks the interaction between the application components and the functionality of the driver.back() button. 
-* Module 8: test_return_to_homepage.py - verifies the operation of the return to homepage button by accessing the logo. 
-* Module 9: test_add_to_cart.py - checks the correctness of the "Add to Cart" button functionality.
-* Module 10: test_social_media_buttons.py - verifies the functionality of the social media buttons and redirects to the corresponding sites.
+<h1>Automation Project for SINSAY</h1>
+
+The purpose of this project is to use all acquired Python automated testing knowledge and apply it, such as: to ensure correct and optimal functionality, user authentication, product search, purchase process and overall site performance- of the web.
+
+Application under test: SINSAY
+
+Tools used: Unittest
+
+Project description: The main purpose of this site's automated testing is to check functionality consistently and efficiently by running a series of predefined tests on different aspects of the site, such as navigation, forms, links and overall user experience.
+
+<ol>
+<li>The structure of the project implemented in Python using unittest is as follows: </li>
+<br>
+
+<ul>
+  <li> Module 1: test_open_site.py - verifies the correctness of opening the site. </li>
+  <li> Module 2: test_accept_cookies.py - checks the functionality of the site on different browsers after accepting cookies. </li>
+  <li> Module 3: test_redirect_to_shopping_page.py - verifies the functioning of the site after redirecting to the shopping page in Romania. </li>
+  <li> Module 4: test_search_functionality.py - verifies the correctness of the product search system. </li>
+  <li> Module 5: test_invalid_search.py - checks the behavior of the search system in case of entering an invalid value. </li>
+  <li> Module 6: test_filter_buttons.py - verifies the correct functioning of the filtering buttons. </li>
+  <li> Module 7: test_interactions.py - checks the interaction between the application components and the functionality of the driver.back() button. </li>
+  <li> Module 8: test_return_to_homepage.py - verifies the operation of the return to homepage button by accessing the logo. </li>
+  <li> Module 9: test_add_to_cart.py - checks the correctness of the "Add to Cart" button functionality.</li>
+  <li> Module 10: test_social_media_buttons.py - verifies the functionality of the social media buttons and redirects to the corresponding sites.</li>
+</ul><br>
+
   
 The framework used for automated testing is unittest. By running the automated tests in the unittest framework, we obtained results regarding the correctness of the functioning of various components of the website in different situations and interactions.
 
