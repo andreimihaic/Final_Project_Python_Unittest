@@ -1,6 +1,3 @@
-Automatic testing.
-==============================================================================================================================
-
 <h1>Automation Project for SINSAY</h1>
 
 The purpose of this project is to use all acquired Python automated testing knowledge and apply it, such as: to ensure correct and optimal functionality, user authentication, product search, purchase process and overall site performance- of the web.
@@ -28,15 +25,14 @@ Project description: The main purpose of this site's automated testing is to che
   <li> Module 10: test_social_media_buttons.py - verifies the functionality of the social media buttons and redirects to the corresponding sites.</li>
 </ul><br>
 
+<ol>
+<li>Test report </li>
+<br>  
   
 The framework used for automated testing is unittest. By running the automated tests in the unittest framework, we obtained results regarding the correctness of the functioning of various components of the website in different situations and interactions.
 
 
 The results obtained validated the proper functioning of the site in different tested scenarios, and unittest provided us with the opportunity to automate this process, thereby reducing errors and the time required for manual verification of each aspect.
-
-
-Test report:
---------------------------------
 
 ![Test1](https://github.com/AndreiMihaiC/Unittest/assets/120325527/fda7aabc-3830-4705-a001-773a65c029d6)
 ![Test12](https://github.com/AndreiMihaiC/Unittest/assets/120325527/2783bcac-dab5-4f0e-98c1-d4e7f7288d0c)
