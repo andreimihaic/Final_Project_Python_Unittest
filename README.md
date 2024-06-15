@@ -9,7 +9,7 @@ Tools used: Unittest
 Project description: The main purpose of this site's automated testing is to check functionality consistently and efficiently by running a series of predefined tests on different aspects of the site, such as navigation, forms, links and overall user experience.
 
 <ol>
-<li>The structure of the project implemented in Python using unittest is as follows: </li>
+<li> The structure of the project implemented in Python using unittest is as follows: </li>
 <br>
 
 <ul>
@@ -26,7 +26,7 @@ Project description: The main purpose of this site's automated testing is to che
 </ul><br>
 
 <ol>
-<li>Test report </li>
+<li> Test report </li>
 <br>  
   
 The framework used for automated testing is unittest. By running the automated tests in the unittest framework, we obtained results regarding the correctness of the functioning of various components of the website in different situations and interactions.
