@@ -1,27 +1,25 @@
-import time
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-class SocialMediaButtons(unittest.TestCase):
+class TestCheckSearchButtonIsDisplayed(unittest.TestCase):
     ACCEPT_COOKIES = (By.ID, "cookiebotDialogOkButton")
     HANDLE_BUTTON = (By.XPATH, '//a[text()="Du-te la magazin"]')
+    BUTTON_SEARCH = (By.ID, "algoliaButton")
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
         self.driver.get("https://www.sinsay.com/")
         self.driver.maximize_window()
+        self.driver.implicitly_wait(10)
 
-    def test_share_buttons(self):
+    def test_search_button_is_displayed(self):
         self.driver.find_element(*self.ACCEPT_COOKIES).click()
         self.driver.find_element(*self.HANDLE_BUTTON).click()
 
-        follow_us_button = self.driver.find_elements(By.XPATH, "//ul[@class='Desktop-module__social-icons_pJ8mSq0870']/li")
-        for item in follow_us_button:
-            item.click()
-            self.assertTrue(item.is_displayed())
-            time.sleep(5)
+        search_button = self.driver.find_element(*self.BUTTON_SEARCH)
+        assert search_button.is_displayed(), "Butonul de căutare nu este vizibil."
 
     def tearDown(self):
         self.driver.quit()

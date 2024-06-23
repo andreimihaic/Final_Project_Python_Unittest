@@ -1,19 +1,20 @@
 import unittest
 import HtmlTestRunner
-from ProiectFinal.Test1_SinsayWebsiteOpen import SelectProducts
-from ProiectFinal.Test2_AcceptCookiesChrome import AcceptCookiesChrome
-from ProiectFinal.Test3_AcceptCookiesEdge import AcceptCookiesEdge
-from ProiectFinal.Test4_AcceptCookiesFirefox import AcceptCookiesFirefox
-from ProiectFinal.Test5_GoToStore import GoTOStoreTest
-from ProiectFinal.Test6_SearchProducts import SearchProducts
-from ProiectFinal.Test7_NotFoundProduct import NotFoundProduct
-from ProiectFinal.Test8_FilterProducts import FilterProducts
-from ProiectFinal.Test9_NavigateBack import NavigateBack
-from ProiectFinal.Test10_ReturnHomepage import ReturnHomepage
-from ProiectFinal.Test11_AddProductCart import AddProductCart
-from ProiectFinal.Test12_EnterAccount import EnterAccount
-from ProiectFinal.Test13_ShareButtons import SocialMediaButtons
-from ProiectFinal.Test14_ChangeLanguage import ChangeLanguage
+from ProiectFinal.Test1_SinsayWebsiteOpen import TestWebsiteOpen
+from ProiectFinal.Test2_AcceptCookies import TestAcceptCookies
+from ProiectFinal.Test3_GoToStore import TestGoTOStore
+from ProiectFinal.Test4_HeaderIsDisplayed import TestHeaderIsDisplayed
+from ProiectFinal.Test5_CheckSearchButtonIsDisplayed import TestCheckSearchButtonIsDisplayed
+from ProiectFinal.Test6_SearchProducts import TestSearchProducts
+from ProiectFinal.Test7_FilterProducts import TestFilterProducts
+from ProiectFinal.Test8_NotFoundProduct import TestNotFoundProduct
+from ProiectFinal.Test9_SortListAscending import TestSortListAscending
+from ProiectFinal.Test10_TestNavigateBack import TestNavigateBack
+from ProiectFinal.Test11_ReturnHomepage import TestReturnHomepage
+from ProiectFinal.Test12_AuthenticationWithEmptyFields import TestAuthenticationWithEmptyFields
+from ProiectFinal.Test13_AuthenticationWrongUsernameAndPassword import TestAuthenticationWrongUserAndPassword
+from ProiectFinal.Test14_ShareButtons import TestSocialMediaIcons
+from ProiectFinal.Test15_ChangeLanguage import TestChangeLanguage
 
 
 class TestSuite(unittest.TestCase):
@@ -21,21 +22,21 @@ class TestSuite(unittest.TestCase):
     def test_suite(self):
         suite = unittest.TestSuite()
         suite.addTests([
-            unittest.defaultTestLoader.loadTestsFromTestCase(SelectProducts),
-            unittest.defaultTestLoader.loadTestsFromTestCase(AcceptCookiesChrome),
-            unittest.defaultTestLoader.loadTestsFromTestCase(AcceptCookiesEdge),
-            unittest.defaultTestLoader.loadTestsFromTestCase(AcceptCookiesFirefox),
-            unittest.defaultTestLoader.loadTestsFromTestCase(GoTOStoreTest),
-            unittest.defaultTestLoader.loadTestsFromTestCase(SearchProducts),
-            unittest.defaultTestLoader.loadTestsFromTestCase(NotFoundProduct),
-            unittest.defaultTestLoader.loadTestsFromTestCase(FilterProducts),
-            unittest.defaultTestLoader.loadTestsFromTestCase(NavigateBack),
-            unittest.defaultTestLoader.loadTestsFromTestCase(ReturnHomepage),
-            unittest.defaultTestLoader.loadTestsFromTestCase(AddProductCart),
-            unittest.defaultTestLoader.loadTestsFromTestCase(EnterAccount),
-            unittest.defaultTestLoader.loadTestsFromTestCase(SocialMediaButtons),
-            unittest.defaultTestLoader.loadTestsFromTestCase(ChangeLanguage),
-
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestWebsiteOpen),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestAcceptCookies),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestGoTOStore),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestHeaderIsDisplayed),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestCheckSearchButtonIsDisplayed),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestSearchProducts),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestFilterProducts),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestNotFoundProduct),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestSortListAscending),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestNavigateBack),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestReturnHomepage),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestAuthenticationWithEmptyFields),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestAuthenticationWrongUserAndPassword),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestSocialMediaIcons),
+            unittest.defaultTestLoader.loadTestsFromTestCase(TestChangeLanguage)
         ])
 
         runner = HtmlTestRunner.HTMLTestRunner(

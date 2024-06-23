@@ -1,11 +1,10 @@
-import time
 import unittest
 from selenium import webdriver
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
 
-class FilterProducts(unittest.TestCase):
+class TestFilterProducts(unittest.TestCase):
     ACCEPT_COOKIES = (By.ID, "cookiebotDialogOkButton")
     HANDLE_BUTTON = (By.XPATH, '//a[text()="Du-te la magazin"]')
     BUTTON_SEARCH = (By.ID, "algoliaButton")
@@ -36,7 +35,7 @@ class FilterProducts(unittest.TestCase):
         l = self.driver.find_element(By.XPATH, "//span[text()='L']").click()
 
         colors = characteristics[2].click()
-        white = self.driver.find_element(By.XPATH, "//span[text()='alb']").click()
+        white = self.driver.find_element(By.XPATH, '//*[@id="algolia-content-overlay"]/div/div/div[2]/div[1]/div[3]/div/div/div[2]/div/div/div/ul/li[1]/div/div').click()
 
         price = self.driver.find_element(By.XPATH, "//div[@data-testid='prices-filters-box']").click()
 

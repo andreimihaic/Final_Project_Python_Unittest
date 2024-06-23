@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class SearchProducts(unittest.TestCase):
+class TestSearchProducts(unittest.TestCase):
     ACCEPT_COOKIES = (By.ID, "cookiebotDialogOkButton")
     HANDLE_BUTTON = (By.XPATH, '//a[text()="Du-te la magazin"]')
     BUTTON_SEARCH = (By.ID, "algoliaButton")

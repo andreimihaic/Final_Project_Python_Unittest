@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class ChangeLanguage(unittest.TestCase):
+class TestChangeLanguage(unittest.TestCase):
     ACCEPT_COOKIES = (By.ID, "cookiebotDialogOkButton")
 
     def setUp(self):

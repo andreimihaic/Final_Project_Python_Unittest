@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-class ReturnHomepage(unittest.TestCase):
+class TestReturnHomepage(unittest.TestCase):
     locators = {
         "ACCEPT_COOKIES": (By.ID, "cookiebotDialogOkButton"),
         "HANDLE_BUTTON": (By.XPATH, '//a[text()="Du-te la magazin"]'),

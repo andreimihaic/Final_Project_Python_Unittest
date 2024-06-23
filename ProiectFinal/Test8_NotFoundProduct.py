@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
 
-class NotFoundProduct(unittest.TestCase):
+class TestNotFoundProduct(unittest.TestCase):
     ACCEPT_COOKIES = (By.ID, "cookiebotDialogOkButton")
     HANDLE_BUTTON = (By.XPATH, '//a[text()="Du-te la magazin"]')
     BUTTON_SEARCH = (By.ID, "algoliaButton")
