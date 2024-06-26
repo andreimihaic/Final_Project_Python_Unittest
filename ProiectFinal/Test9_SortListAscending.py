@@ -32,9 +32,9 @@ class TestSortListAscending(unittest.TestCase):
 
         name_products = self.driver.find_elements(By.CLASS_NAME, 'ds-product-tile-name')
 
-        for product, price in zip(name_products, sorted_product_list):
+        for i, (product, price) in enumerate(zip(name_products, sorted_product_list), start=1):
             price_value = price.find_element(By.CLASS_NAME, "ds-text-size__xl").text
-            print(f'{product.text} - {price_value}')
+            print(f'Produs {i}: {price_value}')
 
         sorted_product_list = sorted(all_list, key=lambda x: float(
             x.find_element(By.CLASS_NAME, "ds-text-size__xl").text.replace("RON", "").replace(",", ".")))

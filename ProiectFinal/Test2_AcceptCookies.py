@@ -7,7 +7,7 @@ class TestAcceptCookies(unittest.TestCase):
     ACCEPT_COOKIES = (By.ID, "cookiebotDialogOkButton")
 
     def setUp(self):
-        self.drivers = []  # Lista pentru a stoca instantele driverelor
+        self.drivers = []
 
     def create_driver(self, browser):
         if browser == "chrome":
@@ -19,7 +19,7 @@ class TestAcceptCookies(unittest.TestCase):
         else:
             raise ValueError(f"Browser necunoscut: {browser}")
 
-        self.drivers[-1].get("https://www.sinsay.com/")  # Deschide site-ul
+        self.drivers[-1].get("https://www.sinsay.com/")
         self.drivers[-1].maximize_window()
         self.drivers[-1].implicitly_wait(5)
 
@@ -29,7 +29,7 @@ class TestAcceptCookies(unittest.TestCase):
             self.create_driver(browser)
             banner_cookies = self.drivers[-1].find_element(By.ID, "cookiebanner")
             self.drivers[-1].find_element(*self.ACCEPT_COOKIES).click()
-            self.assertTrue(banner_cookies.is_enabled(), f"Banner-ul de cookies nu este afișat corect după acceptare pe {browser}.")
+            self.assertTrue(banner_cookies.is_enabled(), f"Banner-ul de cookies nu este afisat corect după acceptare pe {browser}.")
 
     def tearDown(self):
         for driver in self.drivers:

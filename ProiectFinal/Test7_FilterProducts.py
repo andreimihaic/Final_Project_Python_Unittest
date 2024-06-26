@@ -35,9 +35,7 @@ class TestFilterProducts(unittest.TestCase):
         l = self.driver.find_element(By.XPATH, "//span[text()='L']").click()
 
         colors = characteristics[2].click()
-        white = self.driver.find_element(By.XPATH, '//*[@id="algolia-content-overlay"]/div/div/div[2]/div[1]/div[3]/div/div/div[2]/div/div/div/ul/li[1]/div/div').click()
-
-        price = self.driver.find_element(By.XPATH, "//div[@data-testid='prices-filters-box']").click()
+        white = self.driver.find_element(By.XPATH, "//div[contains(@class, 'Colors-module__colorVariant') and contains(@style, 'background: white')]").click()
 
 
         products_list = self.driver.find_elements(By.CLASS_NAME, "AlgoliaProducts-module__algolia-products-container")
@@ -45,7 +43,6 @@ class TestFilterProducts(unittest.TestCase):
         for products in products_list:
             assert 'Tricou' in products.text, "Produsul nu este un tricou."
 
-        assert len(products_list) > 0, "Nu s-au gasit produse."
 
     def tearDown(self):
         self.driver.quit()

@@ -21,7 +21,7 @@ class TestHeaderIsDisplayed(unittest.TestCase):
         WebDriverWait(self.driver, 5).until(EC.element_to_be_clickable(self.HANDLE_BUTTON)).click()
 
         header = self.driver.find_element(By.CLASS_NAME, "Desktop-module__wrapper")
-        self.assertTrue(header.is_displayed(), "Antetul nu este afișat")
+        self.assertTrue(header.is_displayed(), "Antetul nu este afisat")
 
     def tearDown(self):
         self.driver.quit()
