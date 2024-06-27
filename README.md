@@ -185,6 +185,8 @@ The results obtained validated the proper functioning of the site in different t
 </ol>
 <h2> Conclusions </h2>
 
-The tests passed successfully.
+  While no major product risks were identified, we recommend prioritizing the implementation of critical functionality for the product’s success. 
+  As part of the launch preparation, consider conducting additional performance testing and ensuring compatibility across various devices. 
+  A key lesson learned is the importance of comprehensive testing to address potential issues before launch. Effective communication within the development team is also crucial. These insights should inform future projects for optimal outcomes.
 
 
